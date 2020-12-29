@@ -18,21 +18,21 @@ Vehicles.forEach(vehicle => {
 
 console.log(`=============================`);
 
-let maxCar = Vehicles.reduce((a, b) => parseFloat(a.price) > parseFloat(b.price) ? a : b);
+let mostExpensiveVehicle = Vehicles.reduce((a, b) => parseFloat(a.price) > parseFloat(b.price) ? a : b);
 
-console.log("Vehículo más caro:", maxCar.brand, maxCar.model);
+console.log("Vehículo más caro:", mostExpensiveVehicle.brand, mostExpensiveVehicle.model);
 
-let minCar = Vehicles.reduce((a, b) => parseFloat(a.price) < parseFloat(b.price) ? a : b);
+let cheapestVehicle = Vehicles.reduce((a, b) => parseFloat(a.price) < parseFloat(b.price) ? a : b);
 
-console.log("Vehículo más barato:", minCar.brand, minCar.model);
+console.log("Vehículo más barato:", cheapestVehicle.brand, cheapestVehicle.model);
 
-let carsWithY = Vehicles.filter(c => {
+let vehicleWithY = Vehicles.filter(c => {
     if(c.model.includes('Y')){
         return c.model
     }
 });
 
-carsWithY.forEach(car => {
+vehicleWithY.forEach(car => {
     console.log(`Vehículo que contiene en el modelo la letra ‘Y’: ${car.brand} ${car.model} $${car.price}`);
 });
 

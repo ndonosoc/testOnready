@@ -1,3 +1,4 @@
+// Utils.js should have the functions to clean index.js
 export function getCheapestCar
 
 const getCheapestCar = () => {
