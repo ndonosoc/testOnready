@@ -9,15 +9,15 @@ class Vehicle {
 }
 
 class Moto extends Vehicle {
-    constructor(brand, model, cilindrada, price){
+    constructor(brand, model, engine, price){
         super(brand, model, price)
-        this.cilindrada = cilindrada
+        this.engine = engine
     }
 }
 
 class Auto extends Vehicle {
-    constructor(brand, model, puertas, price){
+    constructor(brand, model, doors, price){
         super(brand, model, price)
-        this.puertas = puertas
+        this.doors = doors
     }
 }

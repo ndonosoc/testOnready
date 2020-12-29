@@ -10,9 +10,9 @@ let Vehicles = [
 
 Vehicles.forEach(vehicle => {
     if(vehicle instanceof Moto){
-        console.log(`Marca: ${vehicle.brand} // Modelo: ${vehicle.model} // Cilindrada: ${vehicle.cilindrada} // Precio: $${vehicle.price}`);
+        console.log(`Marca: ${vehicle.brand} // Modelo: ${vehicle.model} // Cilindrada: ${vehicle.engine} // Precio: $${vehicle.price}`);
     } else {
-        console.log(`Marca: ${vehicle.brand} // Modelo: ${vehicle.model} // Puertas: ${vehicle.puertas} // Precio: $${vehicle.price}`);
+        console.log(`Marca: ${vehicle.brand} // Modelo: ${vehicle.model} // Puertas: ${vehicle.doors} // Precio: $${vehicle.price}`);
     }
 });
 
